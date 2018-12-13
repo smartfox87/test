@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      @keyframes btn-shake {
+        20% {
+          transform: translateX(13px);
+        }
+        40% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(8px);
+        }
+        60% {
+          transform: translateX(0px);
+        }
+        80% {
+          transform: translateX(3px);
+        }
+        0%, 100% {
+          transform: translateX(0px);
+        }
+      }
+
+      .container {
+        width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: yellow;
+      }
+
+      .container:hover .link {
+        animation: btn-shake 1.5s ease-in infinite;
+      }
+
+      .link {
+        background-color: #000000;
+        width: 30px;
+        height: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="link"></div>
+    </div>
+  </body>
+</html>
